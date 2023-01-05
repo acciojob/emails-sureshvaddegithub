@@ -30,6 +30,7 @@ public class Gmail extends Email {
         for(Inbox mails:inbox){
             if(mails.getMessage().equals(message)){
                 isAlreadyInInbox = true;
+                break;
             }
         }
           if(inbox.size()!=inboxCapacity){
